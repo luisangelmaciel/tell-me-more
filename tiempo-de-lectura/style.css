@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+.clearfix, .row {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+  content: "";
+  display: table;
+}
+.clearfix:after, .row:after {
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =========================== *\
+**        Actual Styles        **
+\* =========================== */
+body {
+  font-family: "lora", georgia, times, serif;
+  color: #4d4d4d;
+}
+
+h1, h2, h3, h4 {
+  font-family: "lora", georgia, times, serif;
+}
+
+#wrapper {
+  display: block;
+  width: 100%;
+}
+
+#title {
+  display: block;
+  padding: 18px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 27px;
+}
+#title h1 {
+  font-size: 18px;
+}
+
+article {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+article header.article-header {
+  padding: 0.5em 0;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #d9d9d9;
+}
+article header.article-header hgroup {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+article header.article-header .read-time {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 12px;
+}
+article header.article-header .read-time:before {
+  content: "(";
+}
+article header.article-header .read-time:after {
+  content: ")";
+}
+article p {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-bottom: 1.5em;
+}
+
+.read-marker {
+  display: block;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 90px;
+  height: 30px;
+  padding-left: 5px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  line-height: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+}
+.read-marker i {
+  margin-right: 5px;
+}
+.read-marker.fadeIn {
+  opacity: 1;
+}
+.read-marker:before {
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  content: "";
+  background: rgba(0, 0, 0, 0);
+  border: 15px solid rgba(0, 0, 0, 0);
+  border-right-color: black;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 27px;
+  background: #666;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.3);
+}
