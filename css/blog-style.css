@@ -70,7 +70,7 @@
   .nav__trigger .bars:after {
       width: 24px;
       height: 4px;
-      background-color: #ffffff;
+      background-color: #133d8a;
       border-radius: 4px;
       transition: 0.2s ease-in-out 0.35s;
   }
@@ -306,38 +306,6 @@
   .overlay--nav span.is-active {
       transition-delay: 0s;
       transform: translateZ(0) scale(1);
-  }
-  /*  ICOBAR TOP    */
-  
-  .icon-bar {
-      width: 100%;
-      background-color: #017dbb;
-      overflow: auto;
-      font-size: 30px;
-  }
-  
-  .icon-bar p,
-  i {
-      float: left;
-      width: 33.33%;
-      text-align: center;
-      padding: 12px 0;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 30px;
-      text-decoration: none;
-  }
-  
-  .icon-bar p,
-  i:hover {
-      /* background-color: #004966; */
-      color: white;
-  }
-  
-  .active {
-      background-color: #00558c;
-      font-weight: bold;
-      color: white;
   }
   /*  FOOTER   */
   
@@ -672,7 +640,6 @@
   }
   
   p {
-      font-size: 22px;
       font-weight: normal;
       padding-top: 40px;
       line-height: normal;
@@ -2564,8 +2531,7 @@
   
   .navbar {
       overflow: hidden;
-      background-color: #333;
-      position: fixed;
+      background-color: rgb(167, 32, 32);
       top: 0;
       width: 100%;
   }
@@ -2576,7 +2542,6 @@
       display: block;
       color: white;
       text-align: center;
-      padding: 10px 20px;
       text-decoration: none;
   }
   /* Right-aligned link */
@@ -2659,7 +2624,7 @@
   
   .icon-bar {
       width: 100%;
-      background-color: #005677;
+      background-color: #0b4e68;
       overflow: auto;
       font-size: 30px;
   }
