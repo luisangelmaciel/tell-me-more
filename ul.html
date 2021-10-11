@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet " href="css/blog-style.css ">
+<script src="lazysizes.min.js " async></script>
+<link rel="stylesheet " href="css/w3.css ">
+
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+<style>
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: rgb(5, 146, 165);
+    }
+    
+    .progress-bar {
+        height: 8px;
+        background: #18487D;
+        width: 0%;
+    }
+</style>
+
+
+<body>
+
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <!-- <a class="w3-bar-item  w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a> -->
+            <a class="w3-bar-item  w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" onclick="document.getElementById('menu').style.display='block'"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item  w3-theme-l1">Luis Angel Maciel</a>
+            <a href="#" class="w3-bar-item w3-hide-small w3-hover-white">Home</a>
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item w3-hide-large w3-hide-small w3-hide-large"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-small w3-hide-large" href="#">Link</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 style=" font-size: 15vw; font-size: 3.5rem; font-weight: 900; text-decoration: none; color: #18487D; line-height: 1 ">
+                    <span style="color: #18487D; font-size: 1rem; font-weight: 900; ">Desing</span>
+                    <br>Nueva versión de linktree
+                </h1>
+                <div style=" font-size: 14px; line-height: 1.5; ">
+                    <a href="https://twitter.com/intent/follow?screen_name=luisangelmaciel " target="_blank "><b>Luis Maciel,</b></a>
+                    <time datetime="2021-10-03T20:01Z ">Octubre 03, 2021</time>
+
+                    <article>
+                        <p>
+                            <b> Linktree,</b> se encuentra en su máximo apogeo, motivo por el cual decidí crear su perfil.
+                        </p>
+                        <p>
+                            Linktree es un super concepto, me gusta mucho como una idea que casi todos usamos, ellos la agruparon en una ventana con botones que dan referencia al resto del socialmedia que existe en el basto mundo web y ya. Por el lado del monitoreo, es sorprendente
+                            y su forma de monetización es aún más impresionante.<b> Sin embargo su diseño, es muy minimalista, super simple y eso es lo que no me gusta.</b>
+                        </p>
+                        <p>
+                            Hice el perfil respectivo
+                            <a href="www.linktree/xiiber " target="_blank "><b>www.linktree/xiiber</b></a> y no me agradó del todo, así que opte por diseñar una nueva versión <a href="www.xbr.pw/alllinks " target="_blank "><b>www.xbr.pw/alllinks</b></a>                            la cual no me convenció del todo hasta el el intento con <a href="www.xbr.pw/linktree " target="_blank "><b>www.xbr.pw/linktree</b></a>
+                        </p>
+                        <p>
+                            Utilice el dominio del acortador URL <a href="www.xbr.pw " target="_blank "><b>www.xbr.pw</b></a>, donde xbr hace referencia a Xiiber y pw a power.
+                        </p>
+                        <p>
+                            El concepto es el mismo que linktree <b>más incluye un video, una opción de avisos no intrusivos, un registro en la misma página e indicaciones de qué hacer en cada link y no solo el puro icono, título y/o combinación de ambas.</b>
+                        </p>
+                        <p>
+                            El agrupar los links de las principales redes sociales en una misma línea es para <b>no </b>hacer más botones de acción y <b>hacer larga la lista.</b>
+                        </p>
+                        <p>
+                            El único que tiene una acción diferente es el de Twitter que invita a darle seguir desde que termina de cargar el perfil ya sea en su web o app por medio de la opción de <b>“intented”.</b> Una opción que me encanta de Twitter.
+                        </p>
+                        En una primera instancia, coloco solo 4 botones de acción.
+                        <ul>
+                            <li>
+                                En el primero me interesa que realicen una calificación en Google Maps de<b> 5 estrellas </b>e invitarlos a que realicen su reseña de viaje. Adepte uno de los textos que tiene Google Maps después de realizar una reseña
+                                y el resultado fue: Los viajeros confían en las buenas reseñas como las tuyas para ir a los mejores viajes y experiencias.
+                            </li>
+                            <li>
+                                Para el segundo botón, Tripadvisor es otro interés principal en que realicen su <b>reseña </b>con el titular “Cuéntanos tu experiencia“ y la invitación: “Escribe una reseña y hazle saber a todos los viajeros”
+                            </li>
+                            <li>
+                                Tercer nivel,<b> la reservación del viaje,</b> en este caso ejemplificado de Tepozspa con su opción de vestidor y locker.
+                            </li>
+                            <li>
+                                El cuarto botón es para hacer una lista de <b>base de datos</b> bajo el concepto de “Grupo VIP” donde se pueden con no más de 3 registros imput: nombre, email y fecha de cumpleaños y 2 click/touch, el usuario termina de
+                                completar el formulario, formulario que es enviado al whatsapp principal y se evita un registro de anotar el número telefónico.
+                            </li>
+                        </ul>
+                        <p>
+                            Para realizar publicidad o propaganda <b>no intrusiva</b>, se agrega un panel que puede ser ignorado o abierto. Sí el usuario decide abrirlo, verá un video o imagen más la acción a realizar.
+                        </p>
+                        <p>
+                            En una nueva versión deseo hacer algunos cambios de diseño responsivo y agregar nuevas funcionalidades.
+                        </p>
+                        <p>
+                            Cualquier comentario, queja, sugerencia, estoy con la mente abierta a recibirlo.
+                        </p>
+                        <p>
+                            De igual forma si desean una adaptación de la estrategia ya sea de acortador y/o versión de linktree, con mucho gusto puedo gestionar su servicio ya sea en especie y/o efectivo. El chiste es trabajar en conjunto.
+                        </p>
+                        <p>
+                            Eso es todo por el momento, muchas gracias por leer este post y espero que el siguiente post también lo puedas leer.
+                        </p>
+                        <p>
+                            Hasta la próxima.
+                            <br> <br> Atte. <br><b>Luis Angel</b> “el que quiere hacer los diseños bonitos y útiles” <b>Maciel</b>
+                        </p>
+
+
+
+                    </article>
+
+                    <br>
+                    <br>
+                    <div>
+
+                        <div id="container-neon">
+                            <div class="container-leyendo light-neon">
+                                <div id="chronometer" class="chronometer">
+                                    <div class="time">
+                                        <div class="counter-down">
+                                            <div class="box a-light-neon">
+                                                <div id="hour-first-digit" class="left">0</div>
+                                                <div id="hour-second-digit" class="right">2</div>
+                                            </div>
+                                            <div class="description a-light-neon">hrs</div>
+                                        </div>
+                                        <div class="counter-down a-light-neon">
+                                            <div class="box">
+                                                <div id="minute-first-digit" class="left">0</div>
+                                                <div id="minute-second-digit" class="right">7</div>
+                                            </div>
+                                            <div class="description">min</div>
+                                        </div>
+                                        <div class="counter-down a-light-neon">
+                                            <div class="box">
+                                                <div id="second-first-digit" class="left">1</div>
+                                                <div id="second-second-digit" class="right">9</div>
+                                            </div>
+                                            <div class="description">seg</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            .container-leyendo {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .container-leyendo .chronometer {
+                                width: 50%;
+                                font-family: sans-serif;
+                                transition: all 0.5s;
+                            }
+                            
+                            .container-leyendo .chronometer .time {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                            }
+                            
+                            .container-leyendo .chronometer .time .counter-down {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin: 0 12px;
+                            }
+                            
+                            .container-leyendo .chronometer .time .counter-down .box {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            
+                            .container-leyendo .chronometer .time .counter-down .box .left,
+                            .container-leyendo .chronometer .time .counter-down .box .right {
+                                position: relative;
+                                font-size: 14px;
+                                /*     border-radius: 10%;
+                            box-shadow: 0 1px 0px 0 #d456ca, 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+                            text-shadow: 0 0 6px #d456ca;
+                            background-color: #751195;
+                            color: white; */
+                                transition: all 0.5s;
+                            }
+                            
+                            .container-leyendo .chronometer .time .counter-down .box .left::before,
+                            .container-leyendo .chronometer .time .counter-down .box .right::before {
+                                content: "";
+                                display: block;
+                                width: 100%;
+                                height: 1px;
+                                /*  background-color: #751195; */
+                                position: absolute;
+                                right: 0;
+                                top: 48%;
+                                transition: all 0.5s;
+                            }
+                            
+                            .container-leyendo .chronometer .time .counter-down .description {
+                                /*    color: #751195;
+                            letter-spacing: 0.75px;
+                            text-shadow: 0 0 2px #d456ca; */
+                                transition: all 0.5s;
+                            }
+                        </style>
+                        <script src="./tiempo-que-llevas-leyendo-esto.js"></script>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w3-third w3-container w3-hide-small w3-hide-medium">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+                <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+            </div>
+        </div>
+
+
+        <footer id="myFooter">
+            <div style=" width: 100%; background-color: #ffffff; bottom: 0; font-size: 30px; color: #003d66; " class="w3-margin-bottom ">
+                <img src="img/back.svg " alt="back " width="40x " height="40px " loading="lazy " class="lazyload w3-padding w3-margin-bottom " style=" float: left; width: 33.33%; text-align: center; padding: 14px 12px; transition: all 0.3s ease; font-size:
+                30px; text-decoration: none; ">
+                <img src="img/list.svg " onclick="document.getElementById('list').style.display='block'" alt="list " width="40x " height="40px " loading="lazy " class="lazyload w3-padding w3-margin-bottom " style=" float: left; width: 33.33%; text-align: center; padding: 14px 12px; transition: all 0.3s ease; color: #003d66;font-size:
+                30px; text-decoration: none; ">
+                <img src="img/next.svg " alt="next " width="40x " height="40px " loading="lazy " class="lazyload w3-padding w3-margin-bottom " style=" float: left; width: 33.33%; text-align: center; padding: 14px 12px; transition: all 0.3s ease; color: #003d66;
+                font-size: 30px; text-decoration: none; ">
+            </div>
+        </footer>
+
+        <div class="w3-container">
+            <div id="list" class="w3-modal w3-white ">
+                <div class="w3-modal-content w3-card-4 ">
+                    <header class="w3-container w3-black">
+                        <span onclick="document.getElementById('list').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h2>Te puede interesar leer</h2>
+                    </header>
+                    <div class="w3-container">
+                        <ul>
+                            <li>Adele</li>
+                            <li>Agnes</li>
+                            <li>Billy</li>
+                            <li>Bob</li>
+                            <li>Calvin</li>
+                            <li>Christina</li>
+                            <li>Cindy</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container">
+
+            <div id="menu" class="w3-modal w3-white">
+                <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container ">
+                        <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+
+                    </header>
+                    <div class="w3-container">
+                        <img src="img/lamp-white.svg " alt="next " width="35x " height="35px " loading="lazy " class="lazyload w3-margin-bottom w3-margin-top ">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

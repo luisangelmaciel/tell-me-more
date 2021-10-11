@@ -70,7 +70,7 @@
   .nav__trigger .bars:after {
       width: 24px;
       height: 4px;
-      background-color: #133d8a;
+      background-color: #ffffff;
       border-radius: 4px;
       transition: 0.2s ease-in-out 0.35s;
   }
